@@ -2,18 +2,14 @@ import React from "react";
 import "./About.css";
 
 class About extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
+	constructor(props) {
+		super(props);
+		this.state = {};
+	}
 
-    render() {
-        return (
-            <div className="About">
-                About
-            </div>
-        );
-    }
+	render() {
+		return <div className="About">About</div>;
+	}
 }
- 
+
 export default About;

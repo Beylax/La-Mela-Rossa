@@ -1,19 +1,20 @@
 import React from "react";
 import "./Login.css";
-import LoginForm from '../Components/LoginForm';
+import LoginForm from "../Components/LoginForm";
+import AnimatedPage from "../Components/AnimatedPage";
 
 class Login extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return (
-            <div className="Login">
-                <LoginForm/>
-            </div>
-        );
-    }
+	constructor(props) {
+		super(props);
+		this.state = {};
+	}
+	render() {
+		return (
+			<div className="Login">
+				<LoginForm />
+			</div>
+		);
+	}
 }
- 
+
 export default Login;

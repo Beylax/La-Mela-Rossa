@@ -1,89 +1,89 @@
-.navbar-nav{
-    margin: 0 3rem;
+.navbar-nav {
+	margin: 0 3rem;
 }
 
-.nav-link{
-    position: relative;
-    padding: 0;
-    transition: all .3s;
-    text-align: center;
+.nav-link {
+	position: relative;
+	padding: 0;
+	transition: all 0.3s;
+	text-align: center;
 }
 
-.nav-link:visited{
-    color: var(--white-color) !important;
+.nav-link:visited {
+	color: var(--white-color) !important;
 }
 
-.nav-link.active{
-    color: var(--green-color) !important;
-    font-weight: bolder !important;
+.nav-link.active {
+	color: var(--green-color) !important;
+	font-weight: bolder !important;
 }
 
-.nav-link.active::before{
-    max-width: 100%;
+.nav-link.active::before {
+	max-width: 100%;
 }
 
-.nav-link::before{
-    content: '';
-    position: absolute;
-    max-width: 0;
-    height: .1rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--green-color);
-    transition: all .5s;
+.nav-link::before {
+	content: "";
+	position: absolute;
+	max-width: 0;
+	height: 0.1rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--green-color);
+	transition: all 0.5s;
 }
 
-.nav-link:hover{
-    color: var(--green-color) !important;
+.nav-link:hover {
+	color: var(--green-color) !important;
 }
 
-.nav-link:hover::before{
-    max-width: 100%;
+.nav-link:hover::before {
+	max-width: 100%;
 }
 
-.Accedi{
-    position: relative;
-    padding: 1rem 2rem;
-    border: 0;
-    border-radius: .5rem;
-    color: var(--white-color);
-    font-size: 1.3rem;
-    text-decoration: none;
-    background-color: transparent;
-    box-shadow: 0 0 10px white;
-    transition: all .5s;
+.Accedi {
+	position: relative;
+	padding: 1rem 2rem;
+	border: 0;
+	border-radius: 0.5rem;
+	color: var(--white-color);
+	font-size: 1.3rem;
+	text-decoration: none;
+	background-color: transparent;
+	box-shadow: 0 0 10px white;
+	transition: all 0.5s;
 }
 
-.Accedi::before{
-    content: 'ACCEDI';
-    position: absolute;
-    inset: 0;
-    background-color: var(--white-color);
-    border-radius: .5rem;
-    max-width: 0;
-    transition: all .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    font-size: 1.3rem;
+.Accedi::before {
+	content: "ACCEDI";
+	position: absolute;
+	inset: 0;
+	background-color: var(--white-color);
+	border-radius: 0.5rem;
+	max-width: 0;
+	transition: all 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	font-size: 1.3rem;
 }
 
-.Accedi:hover{
-    color: red;
+.Accedi:hover {
+	color: red;
 }
 
-.Accedi:hover::before{
-    max-width: 100%;
+.Accedi:hover::before {
+	max-width: 100%;
 }
 
-@media screen and (max-width: 992px) {    
-    .navbar-nav{
-        margin: 0;
-    }
+@media screen and (max-width: 992px) {
+	.navbar-nav {
+		margin: 0;
+	}
 
-    .nav-item{
-        margin: 1rem 0;
-    }
+	.nav-item {
+		margin: 1rem 0;
+	}
 }
