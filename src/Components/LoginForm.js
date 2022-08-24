@@ -10,7 +10,7 @@ class LoginForm extends React.Component {
 		return (
 			// Se i campi sono corretti allora mela verde
 			// Se i campi NON sono corretti o sono vuoti allora mela rossa
-			<form className="LoginForm text-center">
+			<form className="LoginForm text-center bg-white py-5">
 				<div className="mb-3">
 					<div className="fs-2 text-center">Email🍎</div>
 					<input

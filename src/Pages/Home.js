@@ -22,12 +22,12 @@ class Home extends React.Component {
 		return (
 			<div className="Home">
 				<section>
-					<div className="row align-items-center w-75 mx-auto">
+					<div className="row align-items-center justify-content-center w-75 mx-auto">
 						<div className="col-12 col-md-6">
-							<div className="h1 md-text-center fw-bold">
+							<div className="h1 md-text-center fw-bold text-color-red text-shadow-white">
 								Entra nella famiglia della<br></br>MELA ROSSA
 							</div>
-							<div className="h5 md-text-center text-color-red">
+							<div className="h5 md-text-center text-color-white text-shadow-red">
 								Centri estivi - Doposcuola - Giochi - Uscite -
 								Sport
 							</div>
@@ -40,12 +40,12 @@ class Home extends React.Component {
 									CONTATTATECI
 								</Link>
 								<div className="col-2"></div>
-								<div className="btnIscrizione col-12 col-md-4 my-3 d-flex align-items-center justify-content-center text-color-red h5 lh-lg">
+								<div className="btnIscrizione col-12 col-md-4 my-3 d-flex align-items-center justify-content-center text-color-dark-green h5 lh-lg fw-bold text-shadow-white">
 									Iscriviti ora
 								</div>
 							</div>
 						</div>
-						<div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
+						<div className="col-md-6 d-flex align-items-center justify-content-center position-relative">
 							<img
 								className="LogoTitle"
 								src={require("../Images/Logo.png")}

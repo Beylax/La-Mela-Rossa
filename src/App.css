@@ -1,6 +1,8 @@
 .App {
 	display: flex;
 	flex-direction: column;
+	background-image: url("./Images/SfondoAcqua.jpg");
+	background-size: cover;
 }
 
 .btn-green {

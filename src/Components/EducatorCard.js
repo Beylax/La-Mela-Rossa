@@ -27,7 +27,7 @@ class EducatorCard extends React.Component {
 					<div className="ed-card-text">{this.props.educator.Email}</div>
 					<div className="ed-card-subtitle">Telefono</div>
 					<div className="ed-card-text">{this.props.educator.Telephone}</div>
-					<div className="ed-card-description"></div>
+					<div className="ed-card-description text-color-red text-center fst-italic fw-bold mt-2">{this.props.educator.Description}</div>
 				</div>
 			</div>
 		);

@@ -1,11 +1,15 @@
-.Login input {
+.LoginForm{
+	padding: 0 1rem;
+}
+
+.LoginForm input {
 	height: 4rem;
 	max-width: 40rem;
 	margin: 0 auto;
 	font-size: 1.5rem;
 }
 
-.Login .SignIn {
+.LoginForm .SignIn {
 	position: relative;
 	margin: 1rem;
 	padding: 1rem;
@@ -19,7 +23,7 @@
 	transition: all 0.5s;
 }
 
-.SignIn::before {
+.LoginForm .SignIn::before {
 	content: "ACCEDI";
 	position: absolute;
 	inset: 0;
@@ -34,10 +38,10 @@
 	font-size: 2rem;
 }
 
-.SignIn:hover {
+.LoginForm .SignIn:hover {
 	color: var(--white-color);
 }
 
-.SignIn:hover::before {
+.LoginForm .SignIn:hover::before {
 	max-width: 100%;
 }

@@ -110,7 +110,7 @@ class Contact extends React.Component {
 									<div className="col-md-6">
 										<div className="md-form mb-0">
 											<label
-												for="name"
+												htmlFor="name"
 												className="c-card-subtitle text-color-green"
 											>
 												Nome
@@ -129,7 +129,7 @@ class Contact extends React.Component {
 									<div className="col-md-6">
 										<div className="md-form mb-0">
 											<label
-												for="email"
+												htmlFor="email"
 												className="c-card-subtitle text-color-green"
 											>
 												Email
@@ -151,7 +151,7 @@ class Contact extends React.Component {
 									<div className="col-md-12">
 										<div className="md-form mb-0">
 											<label
-												for="subject"
+												htmlFor="subject"
 												className="c-card-subtitle text-color-green"
 											>
 												Oggetto
@@ -173,7 +173,7 @@ class Contact extends React.Component {
 									<div className="col-md-12">
 										<div className="md-form">
 											<label
-												for="message"
+												htmlFor="message"
 												className="c-card-subtitle text-color-green"
 											>
 												Messaggio

@@ -48,6 +48,10 @@ code {
 	color: var(--green-color);
 }
 
+.text-color-dark-green {
+	color: var(--dark-green-color);
+}
+
 .h1{
 	font-size: max(5vw, 2.5rem);
 }
@@ -58,6 +62,14 @@ a{
 
 a:hover{
 	color: var(--green-color);
+}
+
+.text-shadow-white{
+	text-shadow: 0 0 10px var(--white-color);
+}
+
+.text-shadow-red{
+	text-shadow: 0 0 10px var(--red-color);
 }
 
 @media screen and (max-width: 768px) {
