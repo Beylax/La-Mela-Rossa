@@ -25,7 +25,7 @@ code {
 	--dark-color: #16262e;
 	--light-dark-color: #2e4756;
 	--light-color: #9fa2b2;
-	--red-color: #ba1616;
+	--red-color: #C31A2F;
 	--green-color: #1eb514;
 	--dark-green-color: #106a0a;
 	--white-color: white;
@@ -46,4 +46,20 @@ code {
 
 .text-color-green {
 	color: var(--green-color);
+}
+
+.h1{
+	font-size: max(5vw, 2.5rem);
+}
+
+a{
+	color: var(--red-color);
+}
+
+a:hover{
+	color: var(--green-color);
+}
+
+@media screen and (max-width: 768px) {
+	    
 }

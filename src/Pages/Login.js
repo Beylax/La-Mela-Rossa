@@ -1,7 +1,6 @@
 import React from "react";
 import "./Login.css";
 import LoginForm from "../Components/LoginForm";
-import AnimatedPage from "../Components/AnimatedPage";
 
 class Login extends React.Component {
 	constructor(props) {
