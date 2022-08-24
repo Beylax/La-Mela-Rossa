@@ -20,7 +20,7 @@
 }
 
 .Home .LogoTitle {
-	max-width: 90vw;
+	max-width: min(90vw, 100%);
 }
 
 @media screen and (max-width: 768px) {

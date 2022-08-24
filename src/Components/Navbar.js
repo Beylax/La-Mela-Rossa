@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import background from "../Images/SfondoAcqua.jpg";
 
 class Navbar extends React.Component {
 	constructor(props) {
@@ -17,6 +18,19 @@ class Navbar extends React.Component {
 			document.getElementById(linkID).classList.add("active");
 		}
 	};
+
+	ChangeTheme = () => {
+		let app = document.getElementsByClassName("App")[0];
+		let btn = document.getElementById("BTN_Theme");
+		if (app.style.backgroundImage === "none") {
+			app.style.backgroundImage = `url(${background})`;
+			btn.style.backgroundColor = "var(--white-color)";
+			return;
+		}
+		
+		app.style.backgroundImage = "none";
+		btn.style.backgroundColor = "var(--dark-green-color)";
+	}
 
 	render() {
 		return (
@@ -83,6 +97,7 @@ class Navbar extends React.Component {
 									CONTATTI
 								</Link>
 							</li>
+							<li id="BTN_Theme" className="Theme nav-item mx-2" onClick={this.ChangeTheme}></li>
 						</ul>
 						<Link
 							to="/login"
