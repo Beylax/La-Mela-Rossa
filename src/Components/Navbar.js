@@ -80,7 +80,7 @@ class Navbar extends React.Component {
 									id="contact"
 									onClick={() => this.ToggleActive("contact")}
 								>
-									CONTACT
+									CONTATTI
 								</Link>
 							</li>
 						</ul>

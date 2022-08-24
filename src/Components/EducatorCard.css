@@ -1,0 +1,45 @@
+.EducatorCard{
+    margin-top: max(5vw, 3rem);
+    margin-bottom: max(5vw, 3rem);
+}
+
+.ed-card{
+    box-shadow: 0 0 10px var(--light-color);
+    border-radius: 1rem;
+    overflow: visible;
+}
+
+.ed-img-container{
+    position: absolute;
+    top: min(-5vw, -3rem);
+    left: 50%;
+    transform: translate(-50%);
+    width: max(8vw, 5rem);
+    height: max(8vw, 5rem);
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    z-index: 10;
+    background-color: var(--white-color);
+}
+
+.ed-img{
+    width: max(8vw, 5rem);
+    height: max(8vw, 5rem);
+}
+
+.ed-card-header{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: max(5vw, 3rem);
+}
+
+.ed-card-subtitle{
+    font-size: large;
+    font-weight: bold;
+}
+
+.ed-card-text{
+    font-style: italic;
+}
