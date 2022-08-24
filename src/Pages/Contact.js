@@ -90,7 +90,9 @@ class Contact extends React.Component {
 					</h2>
 					{/*Section description*/}
 					<p className="text-center w-responsive mx-auto mb-5">
-						Se hai bisogno di informazioni, hai delle domande, vuoi darci la tua opinione scrivici, ti risponderemo il prima possibile. Grazie🍎
+						Se hai bisogno di informazioni, hai delle domande, vuoi
+						darci la tua opinione scrivici, ti risponderemo il prima
+						possibile. Grazie🍎
 					</p>
 
 					<div className="row">
@@ -107,7 +109,10 @@ class Contact extends React.Component {
 									{/*Grid column*/}
 									<div className="col-md-6">
 										<div className="md-form mb-0">
-											<label for="name" className="c-card-subtitle text-color-green">
+											<label
+												for="name"
+												className="c-card-subtitle text-color-green"
+											>
 												Nome
 											</label>
 											<input
@@ -123,7 +128,10 @@ class Contact extends React.Component {
 									{/*Grid column*/}
 									<div className="col-md-6">
 										<div className="md-form mb-0">
-											<label for="email" className="c-card-subtitle text-color-green">
+											<label
+												for="email"
+												className="c-card-subtitle text-color-green"
+											>
 												Email
 											</label>
 											<input
@@ -142,7 +150,10 @@ class Contact extends React.Component {
 								<div className="row my-2">
 									<div className="col-md-12">
 										<div className="md-form mb-0">
-											<label for="subject" className="c-card-subtitle text-color-green">
+											<label
+												for="subject"
+												className="c-card-subtitle text-color-green"
+											>
 												Oggetto
 											</label>
 											<input
@@ -161,7 +172,10 @@ class Contact extends React.Component {
 									{/*Grid column*/}
 									<div className="col-md-12">
 										<div className="md-form">
-											<label for="message" className="c-card-subtitle text-color-green">
+											<label
+												for="message"
+												className="c-card-subtitle text-color-green"
+											>
 												Messaggio
 											</label>
 											<textarea
@@ -178,11 +192,8 @@ class Contact extends React.Component {
 							</form>
 
 							<div className="text-center text-md-left my-2">
-								<button
-									className="btn btn-primary"
-									
-								>
-									Send
+								<button className="Invio position-relative">
+									Invia
 								</button>
 							</div>
 						</div>

@@ -1,16 +1,53 @@
-.c-card{
-    max-width: 40rem;
-    margin: 0 auto;
-    box-shadow: 0 0 10px var(--red-color);
-    border-radius: 1rem;
-    padding: 2rem;
+.c-card {
+	max-width: 40rem;
+	margin: 0 auto;
+	box-shadow: 0 0 10px var(--red-color);
+	border-radius: 1rem;
+	padding: 2rem;
 }
 
-.c-card-subtitle{
-    font-size: large;
-    font-weight: bold;
+.c-card-subtitle {
+	font-size: large;
+	font-weight: bold;
 }
 
-.c-card-body > div{
-    margin: .5rem 0;
+.c-card-body > div {
+	margin: 0.5rem 0;
+}
+
+.Invio {
+	position: relative;
+	margin: 1rem;
+	padding: 0.5rem 1rem;
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--red-color);
+	border: none;
+	border-radius: 0.5rem;
+	background-color: transparent;
+	box-shadow: 0 0 10px var(--red-color);
+	transition: all 0.5s;
+}
+
+.Invio::before {
+	content: "Invia";
+	position: absolute;
+	inset: 0;
+	background-color: var(--red-color);
+	border-radius: 0.5rem;
+	max-width: 0;
+	transition: all 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	font-size: 2rem;
+}
+
+.Invio:hover {
+	color: var(--white-color);
+}
+
+.Invio:hover::before {
+	max-width: 100%;
 }

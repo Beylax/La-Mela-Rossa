@@ -71,7 +71,7 @@
 }
 
 .Accedi:hover {
-	color: red;
+	color: var(--red-color);
 }
 
 .Accedi:hover::before {
