@@ -34,13 +34,13 @@ class Home extends React.Component {
 							<div className="row mt-5">
 								<Link
 									to="/contact"
-									className="btn btn-green text-color-white fw-bold col-12 col-md-4 py-3 d-flex align-items-center justify-content-center"
+									className="btnContatti btn btn-green text-color-white fw-bold col-12 col-md-4 py-3 d-flex align-items-center justify-content-center"
 									onClick={() => this.ToggleActive("contact")}
 								>
 									CONTATTATECI
 								</Link>
 								<div className="col-2"></div>
-								<div className="btnIscrizione col-12 col-md-4 my-3 d-flex align-items-center justify-content-center text-color-dark-green h5 lh-lg fw-bold text-shadow-white">
+								<div className="btnIscrizione btn bg-white text-color-green fw-bold col-12 col-md-4 py-3 d-flex align-items-center justify-content-center">
 									Iscriviti ora
 								</div>
 							</div>
