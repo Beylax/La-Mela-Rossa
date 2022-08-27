@@ -31,16 +31,16 @@ class Home extends React.Component {
 								Centri estivi - Doposcuola - Giochi - Uscite -
 								Sport
 							</div>
-							<div className="row mt-5">
+							<div className="row my-4">
 								<Link
 									to="/contact"
-									className="btnContatti btn btn-green text-color-white fw-bold col-12 col-md-4 py-3 d-flex align-items-center justify-content-center"
+									className="btnContatti btn btn-green text-color-white fw-bold col-11 col-lg-4 py-3 d-flex align-items-center justify-content-center"
 									onClick={() => this.ToggleActive("contact")}
 								>
 									CONTATTATECI
 								</Link>
-								<div className="col-2"></div>
-								<div className="btnIscrizione btn bg-white text-color-green fw-bold col-12 col-md-4 py-3 d-flex align-items-center justify-content-center">
+								<div className="col-2 my-1"></div>
+								<div className="btnIscrizione btn bg-white text-color-green fw-bold col-11 col-lg-4 py-3 d-flex align-items-center justify-content-center">
 									Iscriviti ora
 								</div>
 							</div>

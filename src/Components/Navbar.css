@@ -1,5 +1,20 @@
+#NAV_CONTAINER {
+	max-height: 100vh;
+	overflow: hidden;
+	transition: all 1s ease-in-out;
+}
+
 .navbar-nav {
-	margin: 0 3rem;
+	margin-left :3rem;
+}
+
+#BTN_NAVBAR {
+	display: none;
+	transition: all 0.5s;
+}
+
+.rotate{
+    transform: rotate(360deg);
 }
 
 .nav-link {
@@ -88,8 +103,17 @@
 }
 
 @media screen and (max-width: 992px) {
+	.nav-close {
+		max-height: 0 !important;
+	}
+
 	.navbar-nav {
 		margin: 0;
+	}
+
+	#BTN_NAVBAR {
+		display: block;
+		transition: all 0.5s;
 	}
 
 	.nav-item {

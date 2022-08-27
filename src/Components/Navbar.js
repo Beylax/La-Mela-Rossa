@@ -27,86 +27,95 @@ class Navbar extends React.Component {
 			btn.style.backgroundColor = "var(--white-color)";
 			return;
 		}
-		
+
 		app.style.backgroundImage = "none";
 		btn.style.backgroundColor = "var(--dark-green-color)";
-	}
+	};
+
+	ToggleNavbar = () => {
+		let NavContainer = document.getElementById("NAV_CONTAINER");
+		NavContainer.classList.toggle("nav-close");
+
+		let btn = document.getElementById("BTN_NAVBAR");
+		btn.classList.toggle("rotate");
+		if (NavContainer.classList.contains("nav-close")) {
+			btn.innerHTML = "&#8212;";
+		} else {
+			btn.innerHTML = "&#10005;";
+		}
+	};
 
 	render() {
 		return (
 			<nav className="Navbar navbar navbar-expand-lg bg-red p-3">
-				<div className="container-fluid fs-5">
-					<button
-						className="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarTogglerDemo02"
-						aria-controls="navbarTogglerDemo02"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span className="navbar-toggler-icon"></span>
-					</button>
-					<div
-						className="collapse navbar-collapse text-center row g-0 justify-content-center"
-						id="navbarTogglerDemo02"
-					>
-						<ul className="navbar-nav align-items-center col-12 col-lg-8">
-							<li className="nav-item mx-2">
-								<Link
-									to="/"
-									className="nav-brand text-color-white fw-light"
-								>
-									<img
-										width="70"
-										src={require("../Images/Logo.png")}
-										alt="La_Mela_Rossa"
-										onClick={() =>
-											this.ToggleActive("home")
-										}
-									/>
-								</Link>
-							</li>
-							<li className="nav-item mx-2">
-								<Link
-									to="/"
-									className="nav-link text-color-white fw-light active"
-									id="home"
+				<div
+					id="NAV_CONTAINER"
+					className="container-fluid fs-5 row g-0 justify-content-evenly text-center"
+				>
+					<ul className="navbar-nav mb-lg-0 col-12 col-lg-8 align-items-center">
+						<li className="nav-item mx-2">
+							<Link
+								to="/"
+								className="nav-brand text-color-white fw-light"
+							>
+								<img
+									width="70"
+									src={require("../Images/Logo.png")}
+									alt="La_Mela_Rossa"
 									onClick={() => this.ToggleActive("home")}
-								>
-									HOME
-								</Link>
-							</li>
-							<li className="nav-item mx-2">
-								<Link
-									to="/about"
-									className="nav-link text-color-white fw-light"
-									id="about"
-									onClick={() => this.ToggleActive("about")}
-								>
-									ABOUT
-								</Link>
-							</li>
-							<li className="nav-item mx-2">
-								<Link
-									to="/contact"
-									className="nav-link text-color-white fw-light"
-									id="contact"
-									onClick={() => this.ToggleActive("contact")}
-								>
-									CONTATTI
-								</Link>
-							</li>
-							<li id="BTN_Theme" className="Theme nav-item mx-2" onClick={this.ChangeTheme}></li>
-						</ul>
-						<Link
-							to="/login"
-							className="Accedi col-6 col-lg-2"
-							onClick={() => this.ToggleActive(null)}
-						>
-							ACCEDI
-						</Link>
-					</div>
+								/>
+							</Link>
+						</li>
+						<li className="nav-item mx-2">
+							<Link
+								to="/"
+								className="nav-link text-color-white fw-light active"
+								id="home"
+								onClick={() => this.ToggleActive("home")}
+							>
+								HOME
+							</Link>
+						</li>
+						<li className="nav-item mx-2">
+							<Link
+								to="/about"
+								className="nav-link text-color-white fw-light"
+								id="about"
+								onClick={() => this.ToggleActive("about")}
+							>
+								ABOUT
+							</Link>
+						</li>
+						<li className="nav-item mx-2">
+							<Link
+								to="/contact"
+								className="nav-link text-color-white fw-light"
+								id="contact"
+								onClick={() => this.ToggleActive("contact")}
+							>
+								CONTATTI
+							</Link>
+						</li>
+						<li
+							id="BTN_Theme"
+							className="Theme nav-item mx-2"
+							onClick={this.ChangeTheme}
+						></li>
+					</ul>
+					<Link
+						to="/login"
+						className="Accedi col-5 col-lg-2 my-2 my-lg-0"
+						onClick={() => this.ToggleActive(null)}
+					>
+						ACCEDI
+					</Link>
+				</div>
+				<div
+					id="BTN_NAVBAR"
+					className="fw-bold text-color-white text-center m-auto"
+					onClick={this.ToggleNavbar}
+				>
+					&#10005;
 				</div>
 			</nav>
 		);
