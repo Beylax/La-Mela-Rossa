@@ -7,7 +7,11 @@ class Management extends React.Component {
 		this.state = {};
 	}
 	render() {
-		return <div className="Management">Management</div>;
+		return (
+			<div>
+				
+			</div>
+		);
 	}
 }
 
