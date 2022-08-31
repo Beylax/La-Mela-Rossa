@@ -59,11 +59,14 @@
 
 .Accedi {
 	position: relative;
-	padding: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: .7rem;
 	border: 0;
 	border-radius: 0.5rem;
 	color: var(--white-color);
-	font-size: 1.3rem;
+	font-size: 1rem;
 	text-decoration: none;
 	background-color: transparent;
 	box-shadow: 0 0 10px white;
@@ -82,7 +85,7 @@
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 
 .Accedi:hover {
@@ -94,7 +97,7 @@
 }
 
 .Theme{
-	background-color: var(--white-color);
+	background-color: var(--dark-green-color);
 	border-radius: 100%;
 	border: 1px solid black;
 	width: max(2vw, 1rem);

@@ -6,7 +6,9 @@ import background from "../Images/SfondoAcqua.jpg";
 class Navbar extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			Theme: "white"
+		};
 	}
 
 	ToggleActive = (linkID) => {
@@ -22,12 +24,17 @@ class Navbar extends React.Component {
 	ChangeTheme = () => {
 		let app = document.getElementsByClassName("App")[0];
 		let btn = document.getElementById("BTN_Theme");
-		if (app.style.backgroundImage === "none") {
+		if (this.state.Theme === "white") {
 			app.style.backgroundImage = `url(${background})`;
 			btn.style.backgroundColor = "var(--white-color)";
+			this.setState({
+				Theme: "green"
+			});
 			return;
 		}
-
+		this.setState({
+			Theme: "white"
+		});
 		app.style.backgroundImage = "none";
 		btn.style.backgroundColor = "var(--dark-green-color)";
 	};
@@ -96,15 +103,15 @@ class Navbar extends React.Component {
 								CONTATTI
 							</Link>
 						</li>
-						<li
+						{/* <li
 							id="BTN_Theme"
 							className="Theme nav-item mx-2"
 							onClick={this.ChangeTheme}
-						></li>
+						></li> */}
 					</ul>
 					<Link
 						to="/login"
-						className="Accedi col-5 col-lg-2 my-2 my-lg-0"
+						className="Accedi col-5 col-lg-1 my-2 my-lg-0"
 						onClick={() => this.ToggleActive(null)}
 					>
 						ACCEDI

@@ -35,12 +35,12 @@ class LoginForm extends React.Component {
 	}
 	
 	componentDidMount() {
-		axios.get(Utils.server + Utils.queries.Users).then(res => {
-			this.setState({
-				Users: res.data,
-				loaded: true
-			});
-		});
+		// axios.get(Utils.server + Utils.queries.Users).then(res => {
+		// 	this.setState({
+		// 		Users: res.data,
+		// 		loaded: true
+		// 	});
+		// });
 	}
 
 	render() {
