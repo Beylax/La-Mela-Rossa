@@ -1,0 +1,19 @@
+.Users input, .Users textarea, .Users select{
+    width: 100%;
+    height: 2rem;
+}
+
+.Users .Dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(90%, 50rem);
+    box-shadow: 0 0 10px var(--orange-color);
+    background-color: var(--white-color);
+    z-index: 10;
+}
+
+.Users .openDialog{
+    display: block !important;
+}

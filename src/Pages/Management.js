@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import "./Management.css";
 
 class Management extends React.Component {
@@ -9,7 +10,7 @@ class Management extends React.Component {
 	render() {
 		return (
 			<div className="Management">
-				
+				<Outlet/>
 			</div>
 		);
 	}

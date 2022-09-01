@@ -36,7 +36,7 @@ class About extends React.Component {
 	render() {
 		if (this.state.loaded) {
 			return (
-				<div className="About py-4 text-center">
+				<div className="About py-4 text-center m-auto">
 					<section>
 						<h1>AMMINISTRATORI</h1>
 						<div className="row g-0 justify-content-around">
