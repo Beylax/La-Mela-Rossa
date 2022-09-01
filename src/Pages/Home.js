@@ -20,31 +20,31 @@ class Home extends React.Component {
 
 	render() {
 		return (
-			<div className="Home">
+			<div className="Home p-4">
 				<section>
 					<div className="row align-items-center justify-content-center w-75 mx-auto">
-						<div className="col-12 col-md-6">
+						<div className="col-12 col-md-6 p-0">
 							<div className="h1 fw-bold fst-italic text-color-red text-shadow-white">
 								Entra nella famiglia della
 							</div>
 							<div className="h1 fw-bold text-color-red text-shadow-white">
 								MELA ROSSA
 							</div>
-							<div className="h5 md-text-center text-color-red">
+							<div className="h5 text-color-red mb-5">
 								Centri estivi - Doposcuola - Giochi - Uscite -
 								Sport
 							</div>
-							<div className="row my-4">
+							<div className="row g-0 my-4">
 								<Link
 									to="/contact"
-									className="btnContatti btn btn-green text-color-white fw-bold col-6 col-lg-4 py-3 d-flex align-items-center justify-content-center"
+									className="btnContatti btn btn-green text-color-white py-3 fw-bold col-6 col-lg-4 d-flex align-items-center justify-content-center"
 									onClick={() => this.ToggleActive("contact")}
 								>
 									CONTATTATECI
 								</Link>
 								<div className="col-12 col-lg-2 my-1"></div>
-								<div className="btnIscrizione btn bg-white text-color-green fw-bold col-6 col-lg-4 py-3 d-flex align-items-center justify-content-center">
-									Iscriviti ora
+								<div className="btnIscrizione btn bg-white text-color-green py-3 fw-bold col-6 col-lg-4 d-flex align-items-center justify-content-center">
+									ISCRIVITI ORA
 								</div>
 							</div>
 						</div>

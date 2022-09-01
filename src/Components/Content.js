@@ -19,6 +19,13 @@ function Content() {
 
 	useEffect(() => {
 		if (location !== displayLocation) setTransistionStage("fadeOut");
+		let links = document.getElementsByClassName("nav-link");
+		for (let i = 0; i < links.length; i++) {
+			links[i].classList.remove("active");
+		}
+		if (location.pathname === "/" || location.pathname === "/about" || location.pathname === "/contact") {
+			document.getElementById(location.pathname).classList.add("active");
+		}
 	}, [location, displayLocation]);
 
 	return (

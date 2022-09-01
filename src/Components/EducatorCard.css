@@ -1,12 +1,14 @@
 .EducatorCard{
     margin-top: max(5vw, 3rem);
     margin-bottom: max(5vw, 3rem);
+    min-height: 55vh;
+    background-color: var(--red-color) !important;
 }
 
 .ed-card{
     background-color: var(--white-color);
-    box-shadow: 0 0 10px var(--light-color);
-    border-radius: 1rem;
+    box-shadow: 0 0 10px var(--red-color);
+    border-radius: 40% 40% 45% 45% / 35% 35% 65% 65% ;
     overflow: visible;
 }
 
@@ -19,7 +21,7 @@
     height: max(8vw, 5rem);
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px var(--green-color);
     z-index: 10;
     background-color: var(--white-color);
 }
@@ -33,7 +35,7 @@
     font-size: xx-large;
     font-weight: bold;
     text-align: center;
-    margin-top: max(4vw, 3rem);
+    margin-top: max(3vw, 2rem);
 }
 
 .ed-card-subtitle{

@@ -1,6 +1,6 @@
 .c-card {
-	max-width: 40rem;
 	margin: 0 auto;
+	height: 100%;
 	box-shadow: 0 0 10px var(--red-color);
 	border-radius: 1rem;
 	padding: 2rem;

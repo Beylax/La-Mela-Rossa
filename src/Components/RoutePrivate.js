@@ -10,7 +10,7 @@ class ProtectedRoutes extends React.Component {
   }
 
   render() {
-    return localStorage.getItem("logged") === md5("loggato") ? <Outlet /> : <Navigate to="/forbidden" />;
+    return sessionStorage.getItem("logged") === md5("loggato") ? <Outlet /> : <Navigate to="/forbidden" />;
   }
 }
 

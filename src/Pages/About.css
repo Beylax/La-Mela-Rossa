@@ -2,3 +2,7 @@
     min-width: 70%;
     max-width: 80vw;
 }
+
+.About h1{
+    margin-bottom: 4vh;
+}

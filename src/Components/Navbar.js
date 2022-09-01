@@ -77,7 +77,7 @@ class Navbar extends React.Component {
 							<Link
 								to="/"
 								className="nav-link text-color-white fw-light active"
-								id="home"
+								id="/"
 								onClick={() => this.ToggleActive("home")}
 							>
 								HOME
@@ -87,7 +87,7 @@ class Navbar extends React.Component {
 							<Link
 								to="/about"
 								className="nav-link text-color-white fw-light"
-								id="about"
+								id="/about"
 								onClick={() => this.ToggleActive("about")}
 							>
 								ABOUT
@@ -97,7 +97,7 @@ class Navbar extends React.Component {
 							<Link
 								to="/contact"
 								className="nav-link text-color-white fw-light"
-								id="contact"
+								id="/contact"
 								onClick={() => this.ToggleActive("contact")}
 							>
 								CONTATTI

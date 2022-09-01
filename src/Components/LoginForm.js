@@ -22,7 +22,7 @@ class LoginForm extends React.Component {
 		for (let i = 0; i < users.length; i++){
 			if (users[i].Email === this.state.email && users[i].Pwd === md5(this.state.password)) {
 				//Login effettuato con successo
-				localStorage.setItem("logged", md5("loggato"));
+				sessionStorage.setItem("logged", md5("loggato"));
 				window.location.href = "/management"
 				return;
 			}
@@ -35,12 +35,12 @@ class LoginForm extends React.Component {
 	}
 	
 	componentDidMount() {
-		// axios.get(Utils.server + Utils.queries.Users).then(res => {
-		// 	this.setState({
-		// 		Users: res.data,
-		// 		loaded: true
-		// 	});
-		// });
+		axios.get(Utils.server + Utils.queries.Users).then(res => {
+			this.setState({
+				Users: res.data,
+				loaded: true
+			});
+		});
 	}
 
 	render() {

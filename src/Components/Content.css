@@ -3,20 +3,7 @@
     display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 3rem;
 }
-
-@media screen and (max-width: 768px) {
-	.Content{
-		padding: 2rem;
-	}
-}
-
-.Content > div{
-    display: flex;
-	flex-direction: column;
-}
-
 
 /* Transizione tra le pagine */
 .fadeIn {
