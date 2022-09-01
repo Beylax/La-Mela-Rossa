@@ -8,7 +8,7 @@ class Footer extends React.Component {
 	}
 	render() {
 		return (
-			<div className="Footer d-flex align-items-center justify-content-center bg-red text-color-white text-center py-4">
+			<div className="Footer align-items-center justify-content-center bg-red text-color-white text-center py-4">
 				Copyright @ 2022 - La Mela Rossa ASP by Manuel Baldoni
 			</div>
 		);

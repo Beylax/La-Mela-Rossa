@@ -1,0 +1,53 @@
+.Sidednavbar{
+    min-width: min(15rem, 70vw);
+    max-width: min(15rem, 70vw);
+    background-color: var(--red-color);
+    transition: all .5s;
+}
+
+.sidednavbar-nav{
+    list-style: none;
+}
+
+#BTN_Toggle_Sidednavbar{
+    width: fit-content;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.srotate{
+    transform: rotate(360deg);
+    margin: auto;
+}
+
+.sidednavbar-min{
+    min-width: min(5rem, 20vw);
+    max-width: min(5rem, 20vw);
+}
+
+.sidednavbar-min a{
+    aspect-ratio: 1;
+    background-size: cover;
+}
+
+.sidednavbar-min #users{
+    background-image: url("../Images/Users_Logo.png");
+}
+.sidednavbar-min #centers{
+    background-image: url("../Images/Centers_Logo.png");
+}
+.sidednavbar-min #events{
+    background-image: url("../Images/Events_Logo.png");
+}
+.sidednavbar-min #lists{
+    background-image: url("../Images/Lists_Logo.png");
+}
+
+.Sidednavbar .IMG_Logo{
+    width: max(50%, 4rem);
+}
+
+.Sidednavbar .nav-link{
+    font-size: larger;
+    margin: 20% 10%;
+}

@@ -11,16 +11,6 @@ class Navbar extends React.Component {
 		};
 	}
 
-	ToggleActive = (linkID) => {
-		let links = document.getElementsByClassName("nav-link");
-		for (let i = 0; i < links.length; i++) {
-			links[i].classList.remove("active");
-		}
-		if (linkID !== null) {
-			document.getElementById(linkID).classList.add("active");
-		}
-	};
-
 	ChangeTheme = () => {
 		let app = document.getElementsByClassName("App")[0];
 		let btn = document.getElementById("BTN_Theme");

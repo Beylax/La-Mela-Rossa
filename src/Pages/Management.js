@@ -8,7 +8,7 @@ class Management extends React.Component {
 	}
 	render() {
 		return (
-			<div>
+			<div className="Management">
 				
 			</div>
 		);
