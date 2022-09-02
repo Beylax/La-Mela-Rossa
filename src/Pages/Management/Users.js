@@ -3,13 +3,12 @@ import "./Users.css";
 import md5 from "md5";
 import axios from "axios";
 import Utils from "../../Utils/Utils";
-import utils from "../../Utils/Utils";
+import UserCard from "../../Components/UserCard";
 
 class Users extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			Users: [],
 			Roles: [],
 			Users_loaded: false,
 			Roles_loaded: false,
@@ -25,14 +24,24 @@ class Users extends React.Component {
 		};
 	}
 
-	Users = [];
+	Administrators = [];
+	Educators = [];
+	Helpers = [];
 	Roles = [];
 
 	componentDidMount() {
-		axios.get(Utils.server + Utils.queries.Users).then((res) => {
+		axios.get(Utils.server + Utils.queries.Users).then(res => {
+			let users = res.data;
+
+			for (let i = 0; i < users.length; i++){
+				users[i].ImgURL = "FotoProfilo" + users[i].Surname + ".png";
+				if (users[i].Role === "0") this.Administrators.push(users[i]);
+				if (users[i].Role === "1") this.Educators.push(users[i]);
+				if (users[i].Role === "2") this.Helpers.push(users[i]);
+			}
+
 			this.setState({
-				Users: res.data,
-				Users_loaded: true,
+				Users_loaded: true
 			});
 		});
 
@@ -118,14 +127,28 @@ class Users extends React.Component {
 									axios.post(
 											Utils.server + Utils.queries.Users,
 											{
-												Username: this.state.New_User_Username,
-												Email: this.state.New_User_Email,
-												Pwd: md5(this.state.New_User_Password),
-												Surname: this.state.New_User_Soprannome,
-												Firstname: this.state.New_User_Nome,
-												Lastname: this.state.New_User_Cognome,
-												Telephone: this.state.New_User_Telefono,
-												Description: this.state.New_User_Descrizione,
+												Username:
+													this.state
+														.New_User_Username,
+												Email: this.state
+													.New_User_Email,
+												Pwd: md5(
+													this.state
+														.New_User_Password,
+												),
+												Surname:
+													this.state
+														.New_User_Soprannome,
+												Firstname:
+													this.state.New_User_Nome,
+												Lastname:
+													this.state.New_User_Cognome,
+												Telephone:
+													this.state
+														.New_User_Telefono,
+												Description:
+													this.state
+														.New_User_Descrizione,
 												Role: this.state.New_User_Ruolo,
 											},
 										)
@@ -135,7 +158,7 @@ class Users extends React.Component {
 										.catch(function (error) {
 											console.log(error);
 										});
-									// window.location.reload();
+									window.location.reload();
 								}}
 							>
 								SI
@@ -318,6 +341,32 @@ class Users extends React.Component {
 						</form>
 					</section>
 					<hr></hr>
+					<section className="p-3 text-center">
+						<section>
+							<h1 className="mb-5">AMMINISTRATORI</h1>
+							<div className="row g-0 gy-3 justify-content-around">
+								{this.Administrators.map(administrator => (
+									<UserCard key={administrator.Username} educator={administrator} roles={this.state.Roles}/>
+								))}
+							</div>
+						</section>
+						<section>
+							<h1 className="my-5">EDUCATORI</h1>
+							<div className="row g-0 gy-3 justify-content-around">
+								{this.Educators.map(educator => (
+									<UserCard key={educator.Username} educator={educator} roles={this.state.Roles}/>
+								))}
+							</div>
+						</section>
+						<section>
+							<h1 className="my-5">AIUTANTI</h1>
+							<div className="row g-0 gy-3 justify-content-around">
+								{this.Helpers.map(helper => (
+									<UserCard key={helper.Username} educator={helper} roles={this.state.Roles}/>
+								))}
+							</div>
+						</section>
+					</section>
 				</div>
 			);
 		} else {

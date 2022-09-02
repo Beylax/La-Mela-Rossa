@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import background from "../Images/SfondoAcqua.jpg";
+// import background from "../Images/SfondoAcqua.jpg";
 
 class Navbar extends React.Component {
 	constructor(props) {
@@ -12,21 +12,21 @@ class Navbar extends React.Component {
 	}
 
 	ChangeTheme = () => {
-		let app = document.getElementsByClassName("App")[0];
-		let btn = document.getElementById("BTN_Theme");
-		if (this.state.Theme === "white") {
-			app.style.backgroundImage = `url(${background})`;
-			btn.style.backgroundColor = "var(--white-color)";
-			this.setState({
-				Theme: "green"
-			});
-			return;
-		}
-		this.setState({
-			Theme: "white"
-		});
-		app.style.backgroundImage = "none";
-		btn.style.backgroundColor = "var(--dark-green-color)";
+		// let app = document.getElementsByClassName("App")[0];
+		// let btn = document.getElementById("BTN_Theme");
+		// if (this.state.Theme === "white") {
+		// 	app.style.backgroundImage = `url(${background})`;
+		// 	btn.style.backgroundColor = "var(--white-color)";
+		// 	this.setState({
+		// 		Theme: "green"
+		// 	});
+		// 	return;
+		// }
+		// this.setState({
+		// 	Theme: "white"
+		// });
+		// app.style.backgroundImage = "none";
+		// btn.style.backgroundColor = "var(--dark-green-color)";
 	};
 
 	ToggleNavbar = () => {
