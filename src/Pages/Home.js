@@ -24,7 +24,7 @@ class Home extends React.Component {
 				<section>
 					<div className="row align-items-center justify-content-center w-75 mx-auto">
 						<div className="col-12 col-md-6 p-0">
-							<div className="h1 fw-bold fst-italic text-color-red text-shadow-white">
+							<div className="h1 fw-bold fst-italic text-shadow-white">
 								Entra nella famiglia della
 							</div>
 							<div className="h1 fw-bold text-color-red text-shadow-white">
