@@ -21,7 +21,7 @@ class Home extends React.Component {
 	render() {
 		return (
 			<div className="Home p-4">
-				<section>
+				<section className="landing-home">
 					<div className="row align-items-center justify-content-center w-75 mx-auto">
 						<div className="col-12 col-md-6 p-0">
 							<div className="h1 fw-bold fst-italic text-shadow-white">
@@ -56,6 +56,9 @@ class Home extends React.Component {
 							/>
 						</div>
 					</div>
+				</section>
+				<section className="dashboard-home">
+					
 				</section>
 			</div>
 		);

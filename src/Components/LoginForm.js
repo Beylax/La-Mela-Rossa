@@ -17,7 +17,8 @@ class LoginForm extends React.Component {
 	}
 
 	
-	Validate = () => {
+	Validate = (e) => {
+		e.preventDefault();
 		let users = this.state.Users;
 		for (let i = 0; i < users.length; i++){
 			if (users[i].Email === this.state.email && users[i].Pwd === md5(this.state.password)) {
@@ -32,6 +33,10 @@ class LoginForm extends React.Component {
 		this.setState({
 			Error: "Email o password errati"
 		})
+	}
+
+	addEventListener = () => {
+		
 	}
 	
 	componentDidMount() {
@@ -48,7 +53,7 @@ class LoginForm extends React.Component {
 			return (
 				// Se i campi sono corretti allora mela verde
 				// Se i campi NON sono corretti o sono vuoti allora mela rossa
-				<form className="LoginForm text-center bg-white py-5">
+				<form className="LoginForm text-center bg-white py-5" onSubmit={this.Validate}>
 					<div className="mb-3">
 						<div className="fs-2 text-center">Email🍎</div>
 						<input
@@ -76,7 +81,7 @@ class LoginForm extends React.Component {
 							  }}
 						/>
 					</div>
-					<button type="button" className="SignIn" onClick={this.Validate}>
+					<button type="submit" className="SignIn">
 						ACCEDI
 					</button>
 					<div className="text-color-red">
@@ -87,7 +92,9 @@ class LoginForm extends React.Component {
 		}
 		else {
 			//Simbolo di caricamento
-			
+			<div className="LoginForm">
+				caricamento in corso
+			</div>
 		}
 	}
 }
